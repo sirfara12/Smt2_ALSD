@@ -11,5 +11,4 @@ public class Barang28 {
         this.kategori = kategori;
         
     }
-
 }

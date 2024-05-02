@@ -8,13 +8,15 @@ public class Utama28 {
         int kapasitasGudang = sc.nextInt();
         Gudang28 gudang = new Gudang28(7);
         while (true) {
-            System.out.println("\nMenu: ");
-            System.out.println("1.Tambah barang");
-            System.out.println("2.Ambil barang");
-            System.out.println("3.Lihat barang teratas: ");
-            System.out.println("4.tampilkan tumpukan barang");
-            System.out.println("5.keluar ");
-            System.out.print("Pilih operasi: ");
+            System.out.println("\nMENU:");
+            System.out.println("1. Tambah Barang");
+            System.out.println("2. Ambil Barang");
+            System.out.println("3. Tampilkan Tumpukan Barang");
+            System.out.println("4. Tampilkan Barang Teratas");
+            System.out.println("5. Tampilkan Barang Terbawah");
+            System.out.println("6. Cari Barang");
+            System.out.println("7. Keluar");
+            System.out.print("Pilih Operasi: ");
             int pilihan = sc.nextInt();
             sc.nextLine();
 
@@ -44,8 +46,18 @@ public class Utama28 {
             break;
 
             case 5: 
-            System.exit(0);
+            gudang.lihatBarangTerbawah();
             break;
+
+            case 6:
+                    System.out.print("Masukkann kode barang yang dicari:");
+                    kode = sc.nextInt();
+                    sc.nextLine();
+                    gudang.cariBarang(kode);
+                    break;
+
+                case 7:
+                    System.exit(0);
 
             default: 
             System.out.println("Pilihan tidak valid. Silahkan coba lagi.");
