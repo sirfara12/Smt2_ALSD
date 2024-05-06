@@ -1,4 +1,4 @@
-package PT10.Prakk2.Prakk2;
+package PT10.Prakk2.Prak2;
 import java.util.Scanner;
 public class QueueMain {
         public static void menu() {

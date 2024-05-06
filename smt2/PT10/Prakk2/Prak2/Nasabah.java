@@ -1,4 +1,4 @@
-package PT10.Prakk2;
+package PT10.Prakk2.Prak2;
 
 public class Nasabah {
     class Nasabah{
